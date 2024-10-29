@@ -1,0 +1,105 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\ResTic\\WebApiPedidos\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{334EF67E-9239-4802-9635-300E543AAFF3}|WebApiPedidos\\WebApiPedidos.csproj|d:\\restic\\webapipedidos\\webapipedidos\\controllers\\clientecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{334EF67E-9239-4802-9635-300E543AAFF3}|WebApiPedidos\\WebApiPedidos.csproj|solutionrelative:webapipedidos\\controllers\\clientecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{334EF67E-9239-4802-9635-300E543AAFF3}|WebApiPedidos\\WebApiPedidos.csproj|d:\\restic\\webapipedidos\\webapipedidos\\services\\cliente\\iclienteinterface.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{334EF67E-9239-4802-9635-300E543AAFF3}|WebApiPedidos\\WebApiPedidos.csproj|solutionrelative:webapipedidos\\services\\cliente\\iclienteinterface.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{334EF67E-9239-4802-9635-300E543AAFF3}|WebApiPedidos\\WebApiPedidos.csproj|d:\\restic\\webapipedidos\\webapipedidos\\services\\cliente\\clienteservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{334EF67E-9239-4802-9635-300E543AAFF3}|WebApiPedidos\\WebApiPedidos.csproj|solutionrelative:webapipedidos\\services\\cliente\\clienteservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{334EF67E-9239-4802-9635-300E543AAFF3}|WebApiPedidos\\WebApiPedidos.csproj|d:\\restic\\webapipedidos\\webapipedidos\\dto\\cliente\\clientecriacaodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{334EF67E-9239-4802-9635-300E543AAFF3}|WebApiPedidos\\WebApiPedidos.csproj|solutionrelative:webapipedidos\\dto\\cliente\\clientecriacaodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{334EF67E-9239-4802-9635-300E543AAFF3}|WebApiPedidos\\WebApiPedidos.csproj|d:\\restic\\webapipedidos\\webapipedidos\\models\\clientemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{334EF67E-9239-4802-9635-300E543AAFF3}|WebApiPedidos\\WebApiPedidos.csproj|solutionrelative:webapipedidos\\models\\clientemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ClienteModel.cs",
+              "DocumentMoniker": "D:\\ResTic\\WebApiPedidos\\WebApiPedidos\\Models\\ClienteModel.cs",
+              "RelativeDocumentMoniker": "WebApiPedidos\\Models\\ClienteModel.cs",
+              "ToolTip": "D:\\ResTic\\WebApiPedidos\\WebApiPedidos\\Models\\ClienteModel.cs",
+              "RelativeToolTip": "WebApiPedidos\\Models\\ClienteModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAA1AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-29T02:14:46.827Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ClienteCriacaoDto.cs",
+              "DocumentMoniker": "D:\\ResTic\\WebApiPedidos\\WebApiPedidos\\Dto\\Cliente\\ClienteCriacaoDto.cs",
+              "RelativeDocumentMoniker": "WebApiPedidos\\Dto\\Cliente\\ClienteCriacaoDto.cs",
+              "ToolTip": "D:\\ResTic\\WebApiPedidos\\WebApiPedidos\\Dto\\Cliente\\ClienteCriacaoDto.cs",
+              "RelativeToolTip": "WebApiPedidos\\Dto\\Cliente\\ClienteCriacaoDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAA0AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-29T02:14:22.977Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "IClienteInterface.cs",
+              "DocumentMoniker": "D:\\ResTic\\WebApiPedidos\\WebApiPedidos\\Services\\Cliente\\IClienteInterface.cs",
+              "RelativeDocumentMoniker": "WebApiPedidos\\Services\\Cliente\\IClienteInterface.cs",
+              "ToolTip": "D:\\ResTic\\WebApiPedidos\\WebApiPedidos\\Services\\Cliente\\IClienteInterface.cs",
+              "RelativeToolTip": "WebApiPedidos\\Services\\Cliente\\IClienteInterface.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-29T00:53:12.072Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ClienteService.cs",
+              "DocumentMoniker": "D:\\ResTic\\WebApiPedidos\\WebApiPedidos\\Services\\Cliente\\ClienteService.cs",
+              "RelativeDocumentMoniker": "WebApiPedidos\\Services\\Cliente\\ClienteService.cs",
+              "ToolTip": "D:\\ResTic\\WebApiPedidos\\WebApiPedidos\\Services\\Cliente\\ClienteService.cs",
+              "RelativeToolTip": "WebApiPedidos\\Services\\Cliente\\ClienteService.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAQwCIAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-29T00:52:43.262Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ClienteController.cs",
+              "DocumentMoniker": "D:\\ResTic\\WebApiPedidos\\WebApiPedidos\\Controllers\\ClienteController.cs",
+              "RelativeDocumentMoniker": "WebApiPedidos\\Controllers\\ClienteController.cs",
+              "ToolTip": "D:\\ResTic\\WebApiPedidos\\WebApiPedidos\\Controllers\\ClienteController.cs",
+              "RelativeToolTip": "WebApiPedidos\\Controllers\\ClienteController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAABEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-29T01:02:25.324Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
