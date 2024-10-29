@@ -39,10 +39,27 @@ namespace WebApiPedidos.Controllers
         }
 
         [HttpPost("AdicionarCliente")]
-        public async Task<ActionResult<ResponseModel<ClienteModel>>> AdicionarCliente(ClienteCriacaoDto clienteCriacaoDto)
+        public async Task<ActionResult<ResponseModel<List<ClienteModel>>>> AdicionarCliente(ClienteCriacaoDto clienteCriacaoDto)
         {
             var clientes = await _clienteInterface.AdicionarCliente(clienteCriacaoDto);
             return Ok(clientes);
         }
+
+
+        [HttpPut("EditarCliente")]
+        public async Task<ActionResult<ResponseModel<List<ClienteModel>>>> EditarCliente(ClienteEdicaoDto clienteEdicaoDto)
+        {
+            var clientes = await _clienteInterface.EditarCliente(clienteEdicaoDto);
+            return Ok(clientes);
+        }
+
+        [HttpDelete("ExcluirCliente")]
+        public async Task<ActionResult<ResponseModel<List<ClienteModel>>>> ExcluirCliente(int idCliente)
+        {
+            var clientes = await _clienteInterface.ExcluirCliente(idCliente);
+            return Ok(clientes);
+        }
+
+
     }
 }

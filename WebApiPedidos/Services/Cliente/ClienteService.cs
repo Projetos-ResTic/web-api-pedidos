@@ -94,6 +94,67 @@ namespace WebApiPedidos.Services.Cliente
             }
         }
 
+        public async Task<ResponseModel<List<ClienteModel>>> EditarCliente(ClienteEdicaoDto clienteEdicaoDto)
+        {
+            ResponseModel<List<ClienteModel>> resposta = new ResponseModel<List<ClienteModel>>();
+            try
+            {
+                var cliente = await _context.Cliente.FirstOrDefaultAsync(clienteBanco => clienteBanco.Id == clienteEdicaoDto.Id);
+                if (cliente == null)
+                {
+                    resposta.Mensagem = "Nenhum cliente localizado!";
+                    return resposta;
+                }
+
+                cliente.Nome = clienteEdicaoDto.Nome;
+                cliente.Email = clienteEdicaoDto.Email;
+                cliente.NumeroContato = clienteEdicaoDto.NumeroContato;
+                cliente.DataNascimento = clienteEdicaoDto.DataNascimento;
+
+                _context.Update(cliente);
+                await _context.SaveChangesAsync();
+                resposta.Dados = await _context.Cliente.ToListAsync();
+                resposta.Mensagem = "Cliente editado com suceso";
+                return resposta;
+
+
+            }
+            catch (Exception ex)
+            {
+                resposta.Mensagem = ex.Message;
+                resposta.Status = false;
+                return resposta;
+            }
+        }
+
+        public async Task<ResponseModel<List<ClienteModel>>> ExcluirCliente(int idCliente)
+        {
+            ResponseModel<List<ClienteModel>> resposta = new ResponseModel<List<ClienteModel>>();
+            try
+            {
+                var cliente = await _context.Cliente.FirstOrDefaultAsync(clienteBanco => clienteBanco.Id == idCliente);
+
+                if(cliente == null)
+                {
+                    resposta.Mensagem = "Nenhum cliente localizado!";
+                    return resposta;
+                }
+
+                _context.Remove(cliente);
+                await _context.SaveChangesAsync();
+                resposta.Dados = await _context.Cliente.ToListAsync();
+                resposta.Mensagem = "Cliente removido!";
+                return resposta;
+
+            }
+            catch (Exception ex)
+            {
+                resposta.Mensagem = ex.Message;
+                resposta.Status = false;
+                return resposta;
+            }
+        }
+
         public async Task<ResponseModel<List<ClienteModel>>> ListarClientes()
         {
             ResponseModel<List<ClienteModel>> resposta = new ResponseModel<List<ClienteModel>>(); 
@@ -102,7 +163,7 @@ namespace WebApiPedidos.Services.Cliente
                 var clientes = await _context.Cliente.ToListAsync();
 
                 resposta.Dados = clientes;
-                resposta.Mensagem = "Todos os clientes forem coletados!";
+                resposta.Mensagem = "Todos os clientes foram coletados!";
                 return resposta;
             }
             catch (Exception ex)

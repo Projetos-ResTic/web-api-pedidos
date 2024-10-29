@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("WebApiPedidos")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9b39d7ca944db3c841ff673391f71caf95e51cd1")]
 [assembly: System.Reflection.AssemblyProductAttribute("WebApiPedidos")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WebApiPedidos")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
