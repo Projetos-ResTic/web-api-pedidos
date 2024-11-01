@@ -1,7 +1,11 @@
 using Microsoft.EntityFrameworkCore;
 using WebApiPedidos.Data;
 using WebApiPedidos.Services.Cliente;
+using WebApiPedidos.Services.ItemPedido;
 using WebApiPedidos.Services.Pedido;
+using WebApiPedidos.Services.Produto;
+using WebApiPedidos.Services.StatusPedido;
+using WebApiPedidos.Services.TipoProduto;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -14,6 +18,10 @@ builder.Services.AddSwaggerGen();
 
 builder.Services.AddScoped<IClienteInterface, ClienteService>();
 builder.Services.AddScoped<IPedidoInterface, PedidoService>();
+builder.Services.AddScoped<IStatusPedidoInterface, StatusPedidoService>();
+builder.Services.AddScoped<ITipoProdutoInterface, TipoProdutoService>();
+builder.Services.AddScoped<IProdutoInterface, ProdutoService>();
+builder.Services.AddScoped<IItemPedidoInterface, ItemPedidoService>();
 
 // conexão com o banco de dados
 builder.Services.AddDbContext<AppDbContext>(options =>

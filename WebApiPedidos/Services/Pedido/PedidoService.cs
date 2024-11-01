@@ -41,6 +41,67 @@ namespace WebApiPedidos.Services.Pedido
             }
         }
 
+        public async Task<ResponseModel<List<PedidoModel>>> EditarPedido(PedidoEdicaoDto pedidoEdicaoDto)
+        {
+            ResponseModel<List<PedidoModel>> resposta = new ResponseModel<List<PedidoModel>>();
+
+            try
+            {
+                var pedido = await _context.Pedidos.FirstOrDefaultAsync(pedidoBanco => pedidoBanco.Id == pedidoEdicaoDto.Id);
+                if (pedido == null)
+                {
+                    resposta.Mensagem = "Nenhum pedido localizado!";
+                    return resposta;
+                }
+
+                pedido.StatusPedidoId = pedidoEdicaoDto.StatusPedidoId;
+                pedido.ClienteId = pedidoEdicaoDto.ClienteId;
+                pedido.DataPedido = pedidoEdicaoDto.DataPedido;
+
+
+                _context.Update(pedido);
+                await _context.SaveChangesAsync();
+                resposta.Dados = await _context.Pedidos.ToListAsync();
+                resposta.Mensagem = "Pedido editado com sucesso";
+                return resposta;
+
+            }
+            catch (Exception ex)
+            {
+                resposta.Mensagem = ex.Message;
+                resposta.Status = false;
+                return resposta;
+            }
+        }
+
+        public async Task<ResponseModel<List<PedidoModel>>> ExcluirPedido(int idPedido)
+        {
+            ResponseModel<List<PedidoModel>> resposta = new ResponseModel<List<PedidoModel>>();
+            try
+            {
+                var pedido = await _context.Pedidos.FirstOrDefaultAsync(pedidoBanco => pedidoBanco.Id == idPedido);
+
+                if (pedido == null)
+                {
+                    resposta.Mensagem = "Nenhum pedido localizado!";
+                    return resposta;
+                }
+
+                _context.Remove(pedido);
+                await _context.SaveChangesAsync();
+                resposta.Dados = await _context.Pedidos.ToListAsync();
+                resposta.Mensagem = "Pedido removido!";
+                return resposta;
+
+            }
+            catch (Exception ex)
+            {
+                resposta.Mensagem = ex.Message;
+                resposta.Status = false;
+                return resposta;
+            }
+        }
+
         public async Task<ResponseModel<List<PedidoModel>>> ListarPedidos()
         {
             ResponseModel<List<PedidoModel>> resposta = new ResponseModel<List<PedidoModel>>();

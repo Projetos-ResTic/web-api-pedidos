@@ -114,7 +114,7 @@ namespace WebApiPedidos.Services.Cliente
                 _context.Update(cliente);
                 await _context.SaveChangesAsync();
                 resposta.Dados = await _context.Cliente.ToListAsync();
-                resposta.Mensagem = "Cliente editado com suceso";
+                resposta.Mensagem = "Cliente editado com sucesso";
                 return resposta;
 
 

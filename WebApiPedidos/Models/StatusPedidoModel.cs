@@ -9,6 +9,6 @@ namespace WebApiPedidos.Models
         public StatusPedido Status {  get; set; }
 
         [JsonIgnore]
-        public ICollection<PedidoModel> Pedidos { get; set; }
+        public ICollection<PedidoModel> Pedidos { get; set; } = new List<PedidoModel>(); // Inicializando como lista vazia
     }
 }

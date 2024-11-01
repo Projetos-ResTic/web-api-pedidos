@@ -31,5 +31,21 @@ namespace WebApiPedidos.Controllers
             var pedidos = await _pedidoInterface.AdicionarPedido(pedidoCriacaoDto);
             return Ok(pedidos);
         }
+
+
+        [HttpPut("EditarPedido")]
+        public async Task<ActionResult<ResponseModel<List<PedidoModel>>>> EditarPedido(PedidoEdicaoDto pedidoEdicaoDto)
+        {
+            var pedidos = await _pedidoInterface.EditarPedido(pedidoEdicaoDto);
+            return Ok(pedidos);
+        }
+
+
+        [HttpDelete("ExcluirPedido")]
+        public async Task<ActionResult<ResponseModel<List<PedidoModel>>>> ExcluirPedido(int idPedido)
+        {
+            var pedidos = await _pedidoInterface.ExcluirPedido(idPedido);
+            return Ok(pedidos);
+        }
     }
 }

@@ -12,6 +12,6 @@ namespace WebApiPedidos.Models
         public double Valor { get; set;}
 
         [JsonIgnore]
-        public ICollection<ItemPedidoModel> ItemsPedido { get; set; }
+        public ICollection<ItemPedidoModel> ItemsPedido { get; set; } = [];
     }
 }

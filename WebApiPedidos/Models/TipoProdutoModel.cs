@@ -8,6 +8,6 @@ namespace WebApiPedidos.Models
         public string Nome { get; set; }
 
         [JsonIgnore]
-        public ICollection<ProdutoModel> Produtos { get; set; }
+        public ICollection<ProdutoModel> Produtos { get; set; } = new List<ProdutoModel>();
     }
 }
